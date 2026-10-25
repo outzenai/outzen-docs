@@ -49,11 +49,42 @@ The API covers the main things you do in the app, including campaigns, Lists, pr
 
 ## MCP
 
-Guhan also runs an MCP server at `/api/mcp` on your Guhan domain, so MCP-capable AI clients can read and act on your workspace using the same tools as the API. Point your client at that URL and authenticate with your token as a bearer token. Calls are rate limited per token.
+Guhan runs an MCP server at `https://guhan.ai/api/mcp`. Any MCP-capable AI client — Claude, ChatGPT, Codex, Cursor — can connect to it and work on your workspace through a curated set of tools (check readiness, set up products and templates, build Lists, see where credits went, read the inbox, book meetings, and more). Tools never send outreach, never delete records, and only spend credits against a quote you agreed to. Every call is checked against your role in whichever workspace you're using.
 
-<Note>
-  The sidebar shows **Claude MCP** and **Codex MCP** under **Coming soon**. Those are planned shortcuts and aren't available yet. The MCP server above is what to use today.
-</Note>
+Calls are rate limited per token.
+
+### Connect Claude
+
+Claude signs in to Guhan with your Guhan account — you don't need to paste a token.
+
+<Steps>
+  <Step title="Open connector settings">
+    In Claude, open **Settings → Connectors → Add custom connector**. (On Claude Desktop and Claude Web the entry point is the same.)
+  </Step>
+  <Step title="Point it at Guhan">
+    Name it **Guhan** and set the server URL to:
+
+    ```
+    https://guhan.ai/api/mcp
+    ```
+
+    Leave authentication on the default — Claude discovers Guhan's sign-in automatically. Save and enable the connector.
+  </Step>
+  <Step title="Sign in">
+    The first time you use the connector, Claude opens Guhan's sign-in page in your browser and asks you to approve the connection. Review what the connector can do and choose **Approve**. You're back in Claude once it finishes.
+  </Step>
+  <Step title="Try it">
+    Start a Claude chat with the Guhan connector enabled and ask something like **"What's left to set up in my Guhan workspace?"** Claude calls `check_readiness` and reads your next steps back to you.
+  </Step>
+</Steps>
+
+If you belong to more than one workspace, Claude asks which to use before any tool call. Switching workspaces is a question away — **"Switch to the Acme workspace"** — not a reconnect.
+
+### Connect other clients
+
+- **ChatGPT** — enable Developer mode, add a custom connector pointing at the same URL. Sign-in uses OAuth, like Claude.
+- **Codex** — run `codex mcp add guhan https://guhan.ai/api/mcp`, then `codex mcp login guhan`.
+- **Clients that can't do OAuth** — create a Personal Access Token above and paste it as a bearer token.
 
 ## If something's off
 
