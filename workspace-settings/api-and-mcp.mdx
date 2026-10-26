@@ -80,9 +80,35 @@ Claude signs in to Guhan with your Guhan account — you don't need to paste a t
 
 If you belong to more than one workspace, Claude asks which to use before any tool call. Switching workspaces is a question away — **"Switch to the Acme workspace"** — not a reconnect.
 
+### Connect ChatGPT
+
+ChatGPT signs in to Guhan with your Guhan account — like Claude, you don't need to paste a token.
+
+<Steps>
+  <Step title="Turn on developer mode">
+    In ChatGPT, open **Settings → Connectors** and enable **Developer mode**. (Custom connectors are only visible while Developer mode is on.)
+  </Step>
+  <Step title="Add a custom connector">
+    Choose **Add custom connector** and set the server URL to:
+
+    ```
+    https://guhan.ai/api/mcp
+    ```
+
+    Name it **Guhan**. Save the connector.
+  </Step>
+  <Step title="Sign in">
+    The first time you use the connector, ChatGPT opens Guhan's sign-in page in your browser and asks you to approve the connection. Review what the connector can do and choose **Approve**.
+  </Step>
+  <Step title="Try it">
+    Start a ChatGPT chat with the Guhan connector enabled and ask something like **"What's left to set up in my Guhan workspace?"** ChatGPT calls `check_readiness` and reads your next steps back to you.
+  </Step>
+</Steps>
+
+If you belong to more than one workspace, ChatGPT asks which to use before any tool call. Switching workspaces is a question away — **"Switch to the Acme workspace"** — not a reconnect.
+
 ### Connect other clients
 
-- **ChatGPT** — enable Developer mode, add a custom connector pointing at the same URL. Sign-in uses OAuth, like Claude.
 - **Codex** — run `codex mcp add guhan https://guhan.ai/api/mcp`, then `codex mcp login guhan`.
 - **Clients that can't do OAuth** — create a Personal Access Token above and paste it as a bearer token.
 
