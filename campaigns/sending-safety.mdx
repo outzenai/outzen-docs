@@ -5,7 +5,7 @@ description: The daily limits, send windows, pacing, and Do Not Contact checks t
 
 **Every campaign send passes through the same safeguards: per-account limits, a send window, randomized pacing, and a Do Not Contact check. They are on by default.** This page is the reference for all of them.
 
-The fastest way to lose an outbound channel is to get the sending account restricted, so Guhan keeps each account inside conservative bands and slows down instead of skipping when it hits one.
+The fastest way to lose an outbound channel is to get the sending account restricted, so Outzen keeps each account inside conservative bands and slows down instead of skipping when it hits one.
 
 ## Daily and weekly limits
 
@@ -21,7 +21,7 @@ Limits apply per sender account, across all campaigns that use it. These are the
 | Email (Gmail, Outlook) | Emails | 500 | - |
 | WhatsApp | Messages | 40 | - |
 
-On top of the daily and weekly caps, Guhan also limits bursts within an hour. On LinkedIn, invites, DMs, and profile visits together are capped at 10 per hour per account. WhatsApp is capped at 10 messages per hour. These hourly caps are fixed and not editable.
+On top of the daily and weekly caps, Outzen also limits bursts within an hour. On LinkedIn, invites, DMs, and profile visits together are capped at 10 per hour per account. WhatsApp is capped at 10 messages per hour. These hourly caps are fixed and not editable.
 
 You can review and change an account's limits in its settings under **Settings > Sender accounts**.
 
@@ -39,7 +39,7 @@ Nothing is skipped. When an account reaches a limit, the step waits and sends on
 
 ## Send window
 
-Guhan only sends inside each sender account's active hours.
+Outzen only sends inside each sender account's active hours.
 
 - **Default window:** 9:00 to 19:00, Monday to Saturday.
 - **Timezone:** the sender account's timezone, set when you connect it. It is the sender's working hours that count, not the prospect's local time.
@@ -53,23 +53,23 @@ Change an account's hours, days, and timezone in **Settings > Sender accounts**.
 
 ## Pacing
 
-Within the window, Guhan spreads sends out instead of firing them back to back. The gap between two sends on the same account is randomized and scaled to the account's daily limit and the length of its window. For example, 25 LinkedIn invites across a 10-hour window average roughly one every 24 minutes, with each gap varying widely so there is no fixed rhythm. There is always a minimum gap between sends.
+Within the window, Outzen spreads sends out instead of firing them back to back. The gap between two sends on the same account is randomized and scaled to the account's daily limit and the length of its window. For example, 25 LinkedIn invites across a 10-hour window average roughly one every 24 minutes, with each gap varying widely so there is no fixed rhythm. There is always a minimum gap between sends.
 
-If LinkedIn refuses an invite because the prospect was invited recently, Guhan pauses invites on that account for several hours and retries later. Temporary errors retry automatically; you do not lose messages.
+If LinkedIn refuses an invite because the prospect was invited recently, Outzen pauses invites on that account for several hours and retries later. Temporary errors retry automatically; you do not lose messages.
 
 ## Prospect-finding limits and warm-up
 
-The **30-day warm-up** on new LinkedIn accounts controls how much prospect-finding activity Guhan runs from an account, such as profile lookups and searches. They do not set a ramp for invites, DMs, or emails: those use the limits in the table above from the start. Start new accounts gently anyway, and watch the account's health after connecting.
+The **30-day warm-up** on new LinkedIn accounts controls how much prospect-finding activity Outzen runs from an account, such as profile lookups and searches. They do not set a ramp for invites, DMs, or emails: those use the limits in the table above from the start. Start new accounts gently anyway, and watch the account's health after connecting.
 
 ## Pending invites are cleaned up
 
-LinkedIn dislikes large stacks of unanswered invites. Guhan automatically withdraws connection invites it sent that have gone unanswered for 14 days, in a daily cleanup.
+LinkedIn dislikes large stacks of unanswered invites. Outzen automatically withdraws connection invites it sent that have gone unanswered for 14 days, in a daily cleanup.
 
 ## Do Not Contact
 
-Before every send, Guhan checks the prospect against your [Do Not Contact list](/workspace-settings/do-not-contact), which holds email addresses and domains. A match stops that prospect's enrollment, no message goes out, and the list also applies to prospects who are already mid-sequence when you add an entry. See the page for how to add, remove, and bulk-paste entries.
+Before every send, Outzen checks the prospect against your [Do Not Contact list](/workspace-settings/do-not-contact), which holds email addresses and domains. A match stops that prospect's enrollment, no message goes out, and the list also applies to prospects who are already mid-sequence when you add an entry. See the page for how to add, remove, and bulk-paste entries.
 
-If a prospect cannot be reached on a channel (for example, a bounced email address), Guhan skips that step and continues with the rest of the sequence.
+If a prospect cannot be reached on a channel (for example, a bounced email address), Outzen skips that step and continues with the rest of the sequence.
 
 ## Sender health
 

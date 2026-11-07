@@ -1,6 +1,6 @@
 ---
 title: Calendar integrations
-description: Connect Google Calendar, Outlook, Cal.com, or Calendly so Guhan can send booking links and record meetings.
+description: Connect Google Calendar, Outlook, Cal.com, or Calendly so Outzen can send booking links and record meetings.
 ---
 
 **Connect the calendar you already use. Google and Outlook ride on your email sender's sign-in. Cal.com and Calendly use your booking link plus a one-time token.**
@@ -9,16 +9,16 @@ Connect once under Settings, Calendars. Each rep connects their own.
 
 <CardGroup cols={2}>
   <Card title="Google Calendar" icon="google">
-    Uses your connected Gmail sender. Guhan hosts the booking page and reads your availability.
+    Uses your connected Gmail sender. Outzen hosts the booking page and reads your availability.
   </Card>
   <Card title="Outlook Calendar" icon="microsoft">
     Uses your connected Outlook sender. Same experience as Google.
   </Card>
   <Card title="Cal.com" icon="calendar">
-    Paste your booking link and a Cal.com API key. Guhan sets up the booking webhook on your Cal.com account for you.
+    Paste your booking link and a Cal.com API key. Outzen sets up the booking webhook on your Cal.com account for you.
   </Card>
   <Card title="Calendly" icon="calendar">
-    Paste your event URL and a Calendly Personal Access Token. Guhan sets up the webhook subscription on your Calendly account for you.
+    Paste your event URL and a Calendly Personal Access Token. Outzen sets up the webhook subscription on your Calendly account for you.
   </Card>
 </CardGroup>
 
@@ -57,52 +57,52 @@ After setup, the calendar row has a **Copy public booking link** button for a li
 
 ## Cal.com
 
-Guhan sets up the booking webhook on your Cal.com account for you — you just paste your booking link and an API key.
+Outzen sets up the booking webhook on your Cal.com account for you — you just paste your booking link and an API key.
 
 <Steps>
   <Step title="Get a Cal.com API key">
     In Cal.com, go to **Settings → Developer → API keys** and create a new key. Copy it before you leave the page — Cal.com only shows it once.
   </Step>
-  <Step title="Connect in Guhan">
+  <Step title="Connect in Outzen">
     Settings, Calendars, **Connect calendar**, pick **Cal.com**. Paste your booking link (for example `https://cal.com/your-handle/intro30`) and the API key you just created.
   </Step>
   <Step title="Done">
-    Guhan registers the webhook on your Cal.com account automatically and marks the calendar active. Every booking, cancel, and reschedule flows into Guhan from this point on.
+    Outzen registers the webhook on your Cal.com account automatically and marks the calendar active. Every booking, cancel, and reschedule flows into Outzen from this point on.
   </Step>
 </Steps>
 
 ## Calendly
 
-Guhan sets up the webhook subscription on your Calendly account for you — you just paste your event URL and a Personal Access Token.
+Outzen sets up the webhook subscription on your Calendly account for you — you just paste your event URL and a Personal Access Token.
 
 <Steps>
   <Step title="Get a Calendly Personal Access Token">
     In Calendly, go to **Integrations & apps → API & webhooks** and create a Personal Access Token. Copy it before you leave the page — Calendly only shows it once.
 
     <Note>
-      Creating a webhook subscription needs a paid Calendly plan (Standard, Teams, Enterprise, or Professional / Standard Plus / Teams Plus). If you're on Free, Guhan will say so and point you to upgrade in Calendly.
+      Creating a webhook subscription needs a paid Calendly plan (Standard, Teams, Enterprise, or Professional / Standard Plus / Teams Plus). If you're on Free, Outzen will say so and point you to upgrade in Calendly.
     </Note>
   </Step>
-  <Step title="Connect in Guhan">
+  <Step title="Connect in Outzen">
     Settings, Calendars, **Connect calendar**, pick **Calendly**. Paste your event URL (for example `https://calendly.com/your-handle/30min`) and the token you just created.
   </Step>
   <Step title="Done">
-    Guhan registers the webhook subscription on your Calendly account automatically and marks the calendar active. Every new and canceled booking flows into Guhan from this point on.
+    Outzen registers the webhook subscription on your Calendly account automatically and marks the calendar active. Every new and canceled booking flows into Outzen from this point on.
   </Step>
 </Steps>
 
 <Note>
-  Guhan stores your Cal.com API key and Calendly Personal Access Token encrypted at rest and only uses them to manage the booking webhook on your account. The booking link itself is appended with a hidden tracking tag so Guhan can match each booking to the prospect it was sent to. Slots, meeting length, questions, and video links stay under your control in that tool.
+  Outzen stores your Cal.com API key and Calendly Personal Access Token encrypted at rest and only uses them to manage the booking webhook on your account. The booking link itself is appended with a hidden tracking tag so Outzen can match each booking to the prospect it was sent to. Slots, meeting length, questions, and video links stay under your control in that tool.
 </Note>
 
 ## Which one should I use?
 
 <AccordionGroup>
   <Accordion title="I do not have a scheduling tool">
-    Use Google or Outlook. Guhan hosts the booking page for you.
+    Use Google or Outlook. Outzen hosts the booking page for you.
   </Accordion>
   <Accordion title="I already use Cal.com or Calendly">
-    Keep it. You get all of its features, and Guhan still records the meetings.
+    Keep it. You get all of its features, and Outzen still records the meetings.
   </Accordion>
   <Accordion title="Several reps">
     Each rep connects their own. A booking link goes against the calendar of the person who sends it.
@@ -113,9 +113,9 @@ You can set a workspace default scheduling tool under Settings, Calendars. Each 
 
 ## Reconnecting and disconnecting
 
-If a calendar loses access, Guhan prompts you to reconnect. For Google and Outlook, reconnecting goes through the same sign-in as your email sender. If the calendar permission was not granted, Guhan says so and asks you to reconnect and approve every box.
+If a calendar loses access, Outzen prompts you to reconnect. For Google and Outlook, reconnecting goes through the same sign-in as your email sender. If the calendar permission was not granted, Outzen says so and asks you to reconnect and approve every box.
 
-To remove a calendar, use the disconnect button on its row. Meetings already booked are kept. If booking links from that calendar are still in use, Guhan warns you. Without a connected calendar, **Send link** in the Inbox will not work until you connect another.
+To remove a calendar, use the disconnect button on its row. Meetings already booked are kept. If booking links from that calendar are still in use, Outzen warns you. Without a connected calendar, **Send link** in the Inbox will not work until you connect another.
 
 ## If something's off
 
@@ -132,7 +132,7 @@ To remove a calendar, use the disconnect button on its row. Meetings already boo
   <Accordion title="Calendly connect says I need a paid plan">
     Calendly only lets paid plans create webhook subscriptions. Upgrade to Standard, Teams, or Enterprise (Professional, Standard Plus, and Teams Plus also work), then try again.
   </Accordion>
-  <Accordion title="Bookings aren't flowing into Guhan">
+  <Accordion title="Bookings aren't flowing into Outzen">
     Open Settings, Calendars, and check that the row is **Active**. If it says Disconnected, reconnect it with a fresh token.
   </Accordion>
 </AccordionGroup>

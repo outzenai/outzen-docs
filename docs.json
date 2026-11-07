@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Guhan",
+  "name": "Outzen",
   "colors": {
     "primary": "#EA580C",
     "light": "#FB923C",
@@ -9,8 +9,8 @@
   },
   "favicon": "/favicon.ico",
   "logo": {
-    "light": "/logo/guhan-logo.webp",
-    "dark": "/logo/guhan_horizontal_transparent.png"
+    "light": "/logo/outzen-logo.webp",
+    "dark": "/logo/outzen_horizontal_transparent.png"
   },
   "navigation": {
     "tabs": [
@@ -21,7 +21,7 @@
             "group": "Get started",
             "pages": [
               "introduction",
-              "get-started/how-guhan-works",
+              "get-started/how-outzen-works",
               "quickstart",
               {
                 "group": "Sender accounts",
@@ -77,9 +77,9 @@
             ]
           },
           {
-            "group": "Ask Guhan",
+            "group": "Ask Outzen",
             "pages": [
-              "ask-guhan"
+              "ask-outzen"
             ]
           },
           {
@@ -134,12 +134,12 @@
       "anchors": [
         {
           "anchor": "Launch app",
-          "href": "https://guhan.ai",
+          "href": "https://outzen.ai",
           "icon": "arrow-up-right-from-square"
         },
         {
           "anchor": "Contact",
-          "href": "mailto:hello@guhan.ai",
+          "href": "mailto:hello@outzen.ai",
           "icon": "envelope"
         }
       ]
@@ -267,38 +267,38 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hello@guhan.ai"
+        "href": "mailto:hello@outzen.ai"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Launch app",
-      "href": "https://guhan.ai"
+      "href": "https://outzen.ai"
     }
   },
   "footer": {
     "socials": {
-      "linkedin": "https://linkedin.com/company/guhanai"
+      "linkedin": "https://linkedin.com/company/outzenai"
     }
   },
-  "description": "Guhan is an AI SDR — a Sales Development Representative that runs the full outbound workflow: learns your business, finds fit prospects, researches every one, drafts hyper-personalized outreach across LinkedIn, Email, and WhatsApp, handles replies, and books meetings for the sales team.",
+  "description": "Outzen is an AI SDR — a Sales Development Representative that runs the full outbound workflow: learns your business, finds fit prospects, researches every one, drafts hyper-personalized outreach across LinkedIn, Email, and WhatsApp, handles replies, and books meetings for the sales team.",
   "seo": {
     "metatags": {
-      "canonical": "https://docs.guhan.ai",
-      "description": "Guhan is an AI SDR — the same role as a human Sales Development Representative embedded on your team, just executed in software. It learns your business, finds fit prospects, researches every one, drafts hyper-personalized outreach across LinkedIn, Email, and WhatsApp, handles replies, and books meetings.",
-      "keywords": "Guhan, AI SDR, AI Sales Development Representative, autonomous AI sales agent, AI sales agent, outbound sales, intent-based prospecting, buying signals, hyper-personalized outreach, LinkedIn automation, cold email AI, WhatsApp outreach, multi-channel sales, sales automation, sales prospecting tool, B2B lead generation, AI personalization, sales pipeline automation, signal-based sales lists, smart prospect lists",
-      "og:title": "Guhan Docs — AI SDR for LinkedIn, Email, WhatsApp",
-      "og:description": "Guhan is an AI SDR that learns your business, finds fit prospects, researches every one, drafts hyper-personalized outreach across LinkedIn, Email, and WhatsApp, and books meetings — so your pipeline grows without manual SDR work.",
-      "og:site_name": "Guhan AI",
+      "canonical": "https://docs.outzen.ai",
+      "description": "Outzen is an AI SDR — the same role as a human Sales Development Representative embedded on your team, just executed in software. It learns your business, finds fit prospects, researches every one, drafts hyper-personalized outreach across LinkedIn, Email, and WhatsApp, handles replies, and books meetings.",
+      "keywords": "Outzen, AI SDR, AI Sales Development Representative, autonomous AI sales agent, AI sales agent, outbound sales, intent-based prospecting, buying signals, hyper-personalized outreach, LinkedIn automation, cold email AI, WhatsApp outreach, multi-channel sales, sales automation, sales prospecting tool, B2B lead generation, AI personalization, sales pipeline automation, signal-based sales lists, smart prospect lists",
+      "og:title": "Outzen Docs — AI SDR for LinkedIn, Email, WhatsApp",
+      "og:description": "Outzen is an AI SDR that learns your business, finds fit prospects, researches every one, drafts hyper-personalized outreach across LinkedIn, Email, and WhatsApp, and books meetings — so your pipeline grows without manual SDR work.",
+      "og:site_name": "Outzen AI",
       "og:type": "website",
-      "og:url": "https://docs.guhan.ai",
-      "og:image": "https://guhan.ai/logos/guhan-logo.webp",
+      "og:url": "https://docs.outzen.ai",
+      "og:image": "https://outzen.ai/logos/outzen-logo.webp",
       "twitter:card": "summary_large_image",
-      "twitter:title": "Guhan Docs — AI SDR for LinkedIn, Email, WhatsApp",
+      "twitter:title": "Outzen Docs — AI SDR for LinkedIn, Email, WhatsApp",
       "twitter:description": "AI SDR that learns your business, finds fit prospects, researches every one, drafts hyper-personalized outreach across LinkedIn, Email, and WhatsApp, and books meetings.",
-      "twitter:image": "https://guhan.ai/logos/guhan-logo.webp",
+      "twitter:image": "https://outzen.ai/logos/outzen-logo.webp",
       "robots": "index, follow",
-      "author": "Guhan AI",
+      "author": "Outzen AI",
       "theme-color": "#EA580C"
     },
     "indexing": "navigable"

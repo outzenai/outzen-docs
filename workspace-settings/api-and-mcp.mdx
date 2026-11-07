@@ -1,9 +1,9 @@
 ---
 title: API and MCP
-description: Create a personal access token, call the Guhan REST API, and connect an AI client over MCP.
+description: Create a personal access token, call the Outzen REST API, and connect an AI client over MCP.
 ---
 
-You can work with your Guhan workspace from your own code or from an AI client. Both use a **personal access token** that acts as you, with your role and your workspace memberships.
+You can work with your Outzen workspace from your own code or from an AI client. Both use a **personal access token** that acts as you, with your role and your workspace memberships.
 
 ## Create an API key
 
@@ -49,32 +49,32 @@ The API covers the main things you do in the app, including campaigns, Lists, pr
 
 ## MCP
 
-Guhan runs an MCP server at `https://guhan.ai/api/mcp`. Any MCP-capable AI client — Claude, ChatGPT, Codex, Cursor — can connect to it and work on your workspace through a curated set of tools (check readiness, set up products and templates, build Lists, see where credits went, read the inbox, book meetings, and more). Tools never send outreach, never delete records, and only spend credits against a quote you agreed to. Every call is checked against your role in whichever workspace you're using.
+Outzen runs an MCP server at `https://outzen.ai/api/mcp`. Any MCP-capable AI client — Claude, ChatGPT, Codex, Cursor — can connect to it and work on your workspace through a curated set of tools (check readiness, set up products and templates, build Lists, see where credits went, read the inbox, book meetings, and more). Tools never send outreach, never delete records, and only spend credits against a quote you agreed to. Every call is checked against your role in whichever workspace you're using.
 
 Calls are rate limited per token.
 
 ### Connect Claude
 
-Claude signs in to Guhan with your Guhan account — you don't need to paste a token.
+Claude signs in to Outzen with your Outzen account — you don't need to paste a token.
 
 <Steps>
   <Step title="Open connector settings">
     In Claude, open **Settings → Connectors → Add custom connector**. (On Claude Desktop and Claude Web the entry point is the same.)
   </Step>
-  <Step title="Point it at Guhan">
-    Name it **Guhan** and set the server URL to:
+  <Step title="Point it at Outzen">
+    Name it **Outzen** and set the server URL to:
 
     ```
-    https://guhan.ai/api/mcp
+    https://outzen.ai/api/mcp
     ```
 
-    Leave authentication on the default — Claude discovers Guhan's sign-in automatically. Save and enable the connector.
+    Leave authentication on the default — Claude discovers Outzen's sign-in automatically. Save and enable the connector.
   </Step>
   <Step title="Sign in">
-    The first time you use the connector, Claude opens Guhan's sign-in page in your browser and asks you to approve the connection. Review what the connector can do and choose **Approve**. You're back in Claude once it finishes.
+    The first time you use the connector, Claude opens Outzen's sign-in page in your browser and asks you to approve the connection. Review what the connector can do and choose **Approve**. You're back in Claude once it finishes.
   </Step>
   <Step title="Try it">
-    Start a Claude chat with the Guhan connector enabled and ask something like **"What's left to set up in my Guhan workspace?"** Claude calls `check_readiness` and reads your next steps back to you.
+    Start a Claude chat with the Outzen connector enabled and ask something like **"What's left to set up in my Outzen workspace?"** Claude calls `check_readiness` and reads your next steps back to you.
   </Step>
 </Steps>
 
@@ -82,7 +82,7 @@ If you belong to more than one workspace, Claude asks which to use before any to
 
 ### Connect ChatGPT
 
-ChatGPT signs in to Guhan with your Guhan account — like Claude, you don't need to paste a token.
+ChatGPT signs in to Outzen with your Outzen account — like Claude, you don't need to paste a token.
 
 <Steps>
   <Step title="Turn on developer mode">
@@ -92,16 +92,16 @@ ChatGPT signs in to Guhan with your Guhan account — like Claude, you don't nee
     Choose **Add custom connector** and set the server URL to:
 
     ```
-    https://guhan.ai/api/mcp
+    https://outzen.ai/api/mcp
     ```
 
-    Name it **Guhan**. Save the connector.
+    Name it **Outzen**. Save the connector.
   </Step>
   <Step title="Sign in">
-    The first time you use the connector, ChatGPT opens Guhan's sign-in page in your browser and asks you to approve the connection. Review what the connector can do and choose **Approve**.
+    The first time you use the connector, ChatGPT opens Outzen's sign-in page in your browser and asks you to approve the connection. Review what the connector can do and choose **Approve**.
   </Step>
   <Step title="Try it">
-    Start a ChatGPT chat with the Guhan connector enabled and ask something like **"What's left to set up in my Guhan workspace?"** ChatGPT calls `check_readiness` and reads your next steps back to you.
+    Start a ChatGPT chat with the Outzen connector enabled and ask something like **"What's left to set up in my Outzen workspace?"** ChatGPT calls `check_readiness` and reads your next steps back to you.
   </Step>
 </Steps>
 
@@ -109,7 +109,7 @@ If you belong to more than one workspace, ChatGPT asks which to use before any t
 
 ### Connect other clients
 
-- **Codex** — run `codex mcp add guhan https://guhan.ai/api/mcp`, then `codex mcp login guhan`.
+- **Codex** — run `codex mcp add outzen https://outzen.ai/api/mcp`, then `codex mcp login outzen`.
 - **Clients that can't do OAuth** — create a Personal Access Token above and paste it as a bearer token.
 
 ## If something's off
@@ -124,7 +124,7 @@ If you belong to more than one workspace, ChatGPT asks which to use before any t
   <Card title="Roles and permissions" icon="key" href="/workspace-settings/roles-and-permissions">
     What a token can do depends on your role.
   </Card>
-  <Card title="Ask Guhan" icon="comment" href="/ask-guhan">
+  <Card title="Ask Outzen" icon="comment" href="/ask-outzen">
     Prefer chat? Ask in plain language.
   </Card>
 </CardGroup>

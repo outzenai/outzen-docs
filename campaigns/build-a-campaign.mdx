@@ -25,7 +25,7 @@ description: Create a campaign, set its audience and senders, and build the sequ
   </Step>
   <Step title="Set product, goal, and context (optional)">
     - **Product or service** - which product this campaign pitches.
-    - **Goal** - what success looks like, for example "Book a 15-min intro call." Guhan uses it to shape the call to action.
+    - **Goal** - what success looks like, for example "Book a 15-min intro call." Outzen uses it to shape the call to action.
     - **Context** - a short note on who you are targeting and your hook.
   </Step>
   <Step title="Choose senders">
@@ -90,14 +90,14 @@ If a step is missing something, its card shows a plain-language error telling yo
 
     Other options on a message step:
 
-    - **Require approval before sending** - Guhan drafts the message, then holds it in your Tasks until you click Send. Available on steps that have text.
-    - **Reference their recent posts & activity** - LinkedIn DMs only. Guhan reads one of the prospect's recent posts and can open with it. If they have no usable post, the message is written without one.
-    - **Comment and react steps** - choose whether Guhan targets their latest post or their most-engaged recent post, and how old a post may be (default 30 days). For reactions, choose the reaction type. If the prospect has no qualifying post, the step is skipped and the sequence moves on.
+    - **Require approval before sending** - Outzen drafts the message, then holds it in your Tasks until you click Send. Available on steps that have text.
+    - **Reference their recent posts & activity** - LinkedIn DMs only. Outzen reads one of the prospect's recent posts and can open with it. If they have no usable post, the message is written without one.
+    - **Comment and react steps** - choose whether Outzen targets their latest post or their most-engaged recent post, and how old a post may be (default 30 days). For reactions, choose the reaction type. If the prospect has no qualifying post, the step is skipped and the sequence moves on.
     - **Visit profile** triggers a "viewed your profile" notification for the prospect.
 
     LinkedIn invite notes are limited to 300 characters.
 
-    Guhan shows a warning if no account is connected for the channel you picked. You can still save, but you need one before launch.
+    Outzen shows a warning if no account is connected for the channel you picked. You can still save, but you need one before launch.
   </Accordion>
   <Accordion title="Wait">
     Pauses the prospect for a fixed time. Set days and hours. A wait cannot sit directly next to a wait-for-event step.
@@ -131,15 +131,15 @@ If a step is missing something, its card shows a plain-language error telling yo
     Pauses the automation so a person can step in. Choose an **urgency** and optionally add a subject and context.
 
     - **Notify** - sends you a heads-up task for context.
-    - **Take over** - you grab the conversation and send the next message yourself while Guhan steps aside. When you have sent (or skipped), the sequence continues down its single outgoing path.
+    - **Take over** - you grab the conversation and send the next message yourself while Outzen steps aside. When you have sent (or skipped), the sequence continues down its single outgoing path.
 
     New handoff steps offer Notify and Take over. For reply approvals, use an AI reply step instead. Older sequences may still contain Approve, Decide, or Schedule handoffs, which keep working.
   </Accordion>
   <Accordion title="AI reply">
-    Lets Guhan handle replies. Place it after a wait-for-reply step. When the prospect replies, Guhan works out what they mean and writes a response.
+    Lets Outzen handle replies. Place it after a wait-for-reply step. When the prospect replies, Outzen works out what they mean and writes a response.
 
     - **Send for approval** - on, the drafted reply waits in Tasks for you. Off, it sends automatically. Meeting requests always go to a person, whichever way this is set.
-    - **Max consecutive replies** - 1 to 10. Above 1, Guhan keeps the conversation going, waiting for the prospect's next reply each time. Guhan stops at 20 replies per prospect no matter what.
+    - **Max consecutive replies** - 1 to 10. Above 1, Outzen keeps the conversation going, waiting for the prospect's next reply each time. Outzen stops at 20 replies per prospect no matter what.
     - **Reply timeout** - how long to wait for the prospect's next reply (1 hour to 30 days). Default 3 days.
 
     The step has four paths out: **Conversation done**, **Meeting requested**, **Not interested**, and **Reply timeout**.
@@ -164,17 +164,17 @@ If a step is missing something, its card shows a plain-language error telling yo
 
 Each message step has three modes. Pick one with the tiles under **How do you want this message written?** in the step settings.
 
-| Mode | What Guhan sends | Credits |
+| Mode | What Outzen sends | Credits |
 |---|---|---|
-| **Auto-draft** | Guhan writes the message from the campaign goal and context plus its research on the prospect. No instructions needed. | 1 per message |
-| **Guided** | Guhan writes the message following instructions you give (the angle, the hook, the call to action). | 1 per message |
-| **Fixed message** | Exactly the text you write, with `{{tokens}}` filled in per prospect. Guhan does not rewrite it. | None |
+| **Auto-draft** | Outzen writes the message from the campaign goal and context plus its research on the prospect. No instructions needed. | 1 per message |
+| **Guided** | Outzen writes the message following instructions you give (the angle, the hook, the call to action). | 1 per message |
+| **Fixed message** | Exactly the text you write, with `{{tokens}}` filled in per prospect. Outzen does not rewrite it. | None |
 
 Fixed messages can use tokens such as `{{firstName}}`, `{{company}}`, `{{title}}`, `{{senderFirstName}}`, and `{{signature}}`. The **Insert variable** menu lists everything available. If a token has no value for a prospect, that send is skipped instead of going out with a blank, so you never send "Hi , thanks for reading".
 
 Use **Start from template** to fill in a step from your [template library](/brand-and-voice/templates). A template is copied into the step, so later edits to the template do not change steps you already built.
 
-The step settings include a preview: pick one of your prospects and see the draft Guhan would write. More on how drafts are written in [Personalization](/campaigns/personalization).
+The step settings include a preview: pick one of your prospects and see the draft Outzen would write. More on how drafts are written in [Personalization](/campaigns/personalization).
 
 <Frame caption="Further down the step: preview a draft against one of your prospects, require approval, and reference their posts">
   <img src="/images/cp-node-options.png" alt="Further down the step: preview a draft against one of your prospects, require approval, and reference their posts" width="1100" height="700" />
@@ -202,7 +202,7 @@ Click **Test run** in the editor bar, pick a prospect, and walk them through the
 
 <CardGroup cols={3}>
   <Card title="Personalization" icon="wand-magic-sparkles" href="/campaigns/personalization">
-    What Guhan reads before it writes.
+    What Outzen reads before it writes.
   </Card>
   <Card title="Launch and manage" icon="rocket" href="/campaigns/launch-and-manage">
     Check readiness and go live.
