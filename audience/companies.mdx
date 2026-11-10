@@ -9,7 +9,7 @@ description: The companies your prospects work at, with industry, headcount and 
 
 Open **Prospects** in the sidebar and switch to the **Companies** tab. (Older links to the Companies page redirect here.)
 
-- **Filter** by industry, country, city, headcount and status.
+- **Filter** by industry, country, city, headcount, revenue and status.
 - **Edit in place**: name, industry, size, location and domain can be edited in the table. The change shows on every prospect at that company.
 - **Create company**: add one by hand with name, website, LinkedIn URL, industry, location, employee range, founded year, description and notes. Most companies arrive on their own when a prospect is added.
 - By default the table shows companies with at least one prospect in your Lists. If there are companies with none yet, a filter option lets you include them.
@@ -21,6 +21,17 @@ Open **Prospects** in the sidebar and switch to the **Companies** tab. (Older li
 <Frame caption="Create company: the name is required. Website, firmographics and notes are optional">
   <img src="/images/co-create.png" alt="Create company: the name is required. Website, firmographics and notes are optional" width="1000" height="900" />
 </Frame>
+
+## Annual revenue
+
+A company's **Revenue** is an estimated yearly range, such as $10M – $20M. It is hidden until you turn it on: open the column menu and tick **Revenue** (it is in the Firmographics group).
+
+- **Sort**: click the **Revenue** header to put the largest estimates first. Companies with no estimate come last.
+- **Filter**: add a **Revenue** rule and pick a range: Under $1M, $1M – $10M, $10M – $50M, $50M – $200M, $200M – $1B, $1B+, or Not known. A company matches a range when its estimate touches it, so one estimated at $5M – $10M shows under both $1M – $10M and $10M – $50M.
+- **Company page**: the **Details** tab shows it as **Annual revenue**. A company with no estimate shows "Not available".
+- **Export**: the CSV has the range as two columns.
+
+Enrichment does not fill in revenue. A company gets an estimate when one of your Lists finds it through a signal that returns one: Recently raised funding, Hiring growth, Hiring in specific areas or Uses a specific technology. Until then the column shows a dash. To find companies by revenue in the first place, add a **Revenue (USD)** rule to one of those signals; see the [Signal catalog](/audience/lists/signal-catalog#hiring-and-growth).
 
 ## Enrich a company
 
@@ -35,7 +46,7 @@ Each company costs 1 credit. It needs the company's LinkedIn URL. See [Enrichmen
 
 Click a company to open it in a side panel. The expand icon at the top left (**Open full record**) opens the same record as a full page. Tabs:
 
-- **Details**: editable company fields.
+- **Details**: company fields, most of them editable. Annual revenue is shown but can't be edited.
 - **People**: every prospect you have found at this company.
 - **Lists**: the Lists those prospects are in.
 - **Research**: a company brief, plus recent funding and hiring highlights where available.

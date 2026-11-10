@@ -39,7 +39,7 @@ The list shows each token's status (active, expired, or revoked), when it was cr
 
 ## REST API
 
-The public API is documented interactively in the app at `/docs/api`, and the OpenAPI specification is available at `/api/v1/openapi.json`. Send your token as a bearer token:
+The public API is documented interactively at [https://outzen.ai/docs/api](https://outzen.ai/docs/api), and the OpenAPI specification is available at [https://outzen.ai/api/v1/openapi.json](https://outzen.ai/api/v1/openapi.json). Send your token as a bearer token:
 
 ```
 Authorization: Bearer pat_live_...
@@ -59,7 +59,7 @@ Claude signs in to Outzen with your Outzen account — you don't need to paste a
 
 <Steps>
   <Step title="Open connector settings">
-    In Claude, open **Settings → Connectors → Add custom connector**. (On Claude Desktop and Claude Web the entry point is the same.)
+    In Claude, open **Settings → Customize**, choose the **Connectors** tab (top left), then click **Add** (top right). (On Claude Desktop and Claude Web the entry point is the same.)
   </Step>
   <Step title="Point it at Outzen">
     Name it **Outzen** and set the server URL to:
@@ -85,17 +85,19 @@ If you belong to more than one workspace, Claude asks which to use before any to
 ChatGPT signs in to Outzen with your Outzen account — like Claude, you don't need to paste a token.
 
 <Steps>
-  <Step title="Turn on developer mode">
-    In ChatGPT, open **Settings → Connectors** and enable **Developer mode**. (Custom connectors are only visible while Developer mode is on.)
+  <Step title="Open Plugins">
+    In ChatGPT, click **Plugins** in the left panel.
+
+    If you don't see **Plugins**, your ChatGPT may still use the older route: open **Settings → Connectors**, turn on **Developer mode**, and choose **Add custom connector**. Name it **Outzen** and use the URL in the next step.
   </Step>
-  <Step title="Add a custom connector">
-    Choose **Add custom connector** and set the server URL to:
+  <Step title="Add a custom MCP server">
+    Click **Add** (top right) and choose **Add custom MCP server**. In the window that opens, enter **Outzen** as the **Name** and this URL as the **Connection**:
 
     ```
     https://outzen.ai/api/mcp
     ```
 
-    Name it **Outzen**. Save the connector.
+    Then click **Create as a plugin**.
   </Step>
   <Step title="Sign in">
     The first time you use the connector, ChatGPT opens Outzen's sign-in page in your browser and asks you to approve the connection. Review what the connector can do and choose **Approve**.
