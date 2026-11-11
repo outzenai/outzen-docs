@@ -58,7 +58,7 @@ When a feature doc changes behavior a customer can see, update the matching page
 - Plain, direct prose. Second person ("you").
 - Say what the customer sees and can do, not how it is built. No internal stage names, enum values, or database terms.
 - No vendor or data-provider names. No "webhook" unless quoting a third-party screen.
-- Say "Campaign", never "agent", for the outreach unit. Retired terms (Outreach Agents, Watchlist Agents) appear only in `docs.json` redirects.
+- Say "Campaign", never "agent", for the outreach unit. The retired terms (Outreach Agents, Watchlist Agents) and their old `/agents/...` URLs appear nowhere, not even as redirects.
 - No benchmarks, reply-rate claims, or timing promises you cannot source. Do not state a number unless you checked it in code.
 - Every page has `title` and `description` frontmatter. End concept pages with 2 to 4 related cards.
 - Screenshot slots are `{/* SCREENSHOT: slug — what to show */}` comments. Search for `SCREENSHOT:` to list the shots still to capture.
