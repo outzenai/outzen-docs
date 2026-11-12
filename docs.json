@@ -189,21 +189,21 @@
       "linkedin": "https://linkedin.com/company/outzenai"
     }
   },
-  "description": "Outzen is an AI SDR — a Sales Development Representative that runs the full outbound workflow: learns your business, finds fit prospects, researches every one, drafts hyper-personalized outreach across LinkedIn, Email, and WhatsApp, handles replies, and books meetings for the sales team.",
+  "description": "Outzen is an AI GTM Agent that runs the full outbound workflow: learns your business, finds fit prospects, researches every one, drafts hyper-personalized outreach across LinkedIn, Email, and WhatsApp, handles replies, and books meetings for the sales team.",
   "seo": {
     "metatags": {
       "canonical": "https://docs.outzen.ai",
-      "description": "Outzen is an AI SDR — the same role as a human Sales Development Representative embedded on your team, just executed in software. It learns your business, finds fit prospects, researches every one, drafts hyper-personalized outreach across LinkedIn, Email, and WhatsApp, handles replies, and books meetings.",
-      "keywords": "Outzen, AI SDR, AI Sales Development Representative, autonomous AI sales agent, AI sales agent, outbound sales, intent-based prospecting, buying signals, hyper-personalized outreach, LinkedIn automation, cold email AI, WhatsApp outreach, multi-channel sales, sales automation, sales prospecting tool, B2B lead generation, AI personalization, sales pipeline automation, signal-based sales lists, smart prospect lists",
-      "og:title": "Outzen Docs — AI SDR for LinkedIn, Email, WhatsApp",
-      "og:description": "Outzen is an AI SDR that learns your business, finds fit prospects, researches every one, drafts hyper-personalized outreach across LinkedIn, Email, and WhatsApp, and books meetings — so your pipeline grows without manual SDR work.",
+      "description": "Outzen is an AI GTM Agent — the autonomous software version of an SDR embedded on your team. It learns your business, finds fit prospects, researches every one, drafts hyper-personalized outreach across LinkedIn, Email, and WhatsApp, handles replies, and books meetings.",
+      "keywords": "Outzen, AI GTM Agent, autonomous AI GTM Agent, outbound sales, intent-based prospecting, buying signals, hyper-personalized outreach, LinkedIn automation, cold email AI, WhatsApp outreach, multi-channel sales, sales automation, sales prospecting tool, B2B lead generation, AI personalization, sales pipeline automation, signal-based sales lists, smart prospect lists",
+      "og:title": "Outzen Docs — AI GTM Agent for LinkedIn, Email, WhatsApp",
+      "og:description": "Outzen is an AI GTM Agent that learns your business, finds fit prospects, researches every one, drafts hyper-personalized outreach across LinkedIn, Email, and WhatsApp, and books meetings — so your pipeline grows without manual SDR work.",
       "og:site_name": "Outzen AI",
       "og:type": "website",
       "og:url": "https://docs.outzen.ai",
       "og:image": "https://outzen.ai/logos/outzen-logo.webp",
       "twitter:card": "summary_large_image",
-      "twitter:title": "Outzen Docs — AI SDR for LinkedIn, Email, WhatsApp",
-      "twitter:description": "AI SDR that learns your business, finds fit prospects, researches every one, drafts hyper-personalized outreach across LinkedIn, Email, and WhatsApp, and books meetings.",
+      "twitter:title": "Outzen Docs — AI GTM Agent for LinkedIn, Email, WhatsApp",
+      "twitter:description": "AI GTM Agent that learns your business, finds fit prospects, researches every one, drafts hyper-personalized outreach across LinkedIn, Email, and WhatsApp, and books meetings.",
       "twitter:image": "https://outzen.ai/logos/outzen-logo.webp",
       "robots": "index, follow",
       "author": "Outzen AI",
